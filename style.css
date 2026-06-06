@@ -30,15 +30,16 @@ body {
     border-radius: 30px;
     position: relative;
     overflow: hidden;
-    padding: 25px 20px 20px;
+    padding: 0;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
 }
 
 .corner {
     position: absolute;
-    width: 100px;
-    height: 100px;
-    opacity: 0.25;
+    width: 120px;
+    height: 120px;
+    opacity: 0.4;
+    z-index: 5;
 }
 
 .corner.top-left {
@@ -77,8 +78,9 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 20px 10px;
-    border-radius: 20px;
+    padding: 30px 20px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 .header::before {
@@ -88,8 +90,9 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(180deg, rgba(5, 5, 5, 0.7) 0%, rgba(5, 5, 5, 0.9) 100%);
-    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(5, 5, 5, 0.5) 0%, rgba(5, 5, 5, 0.85) 70%, rgba(5, 5, 5, 1) 100%);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
     z-index: 0;
 }
 
@@ -216,6 +219,7 @@ body {
     flex-direction: column;
     gap: 10px;
     margin-bottom: 18px;
+    padding: 0 20px;
 }
 
 .button {
@@ -292,6 +296,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 8px;
     margin-bottom: 18px;
+    padding: 0 20px;
 }
 
 .card {
@@ -372,7 +377,7 @@ body {
     position: relative;
     z-index: 1;
     text-align: center;
-    padding: 5px 0 10px;
+    padding: 10px 20px 25px;
 }
 
 .footer p {
