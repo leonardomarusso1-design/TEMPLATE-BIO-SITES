@@ -71,9 +71,31 @@ body {
 
 .header {
     position: relative;
-    z-index: 1;
     text-align: center;
     margin-bottom: 20px;
+    background-image: url('assets/fundo header.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 10px;
+    border-radius: 20px;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(5, 5, 5, 0.7) 0%, rgba(5, 5, 5, 0.9) 100%);
+    border-radius: 20px;
+    z-index: 0;
+}
+
+.header > * {
+    position: relative;
+    z-index: 1;
 }
 
 .logo {
