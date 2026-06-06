@@ -1,0 +1,13 @@
+{
+  "name": "bio-site-borracharia",
+  "version": "1.0.0",
+  "description": "Bio Site para Borracharia Claudney",
+  "scripts": {
+    "dev": "echo 'Open index.html in browser'",
+    "build": "echo 'Static site - no build needed'",
+    "start": "echo 'Open index.html in browser'"
+  },
+  "keywords": ["bio-site", "landing-page"],
+  "author": "",
+  "license": "MIT"
+}
